@@ -39,7 +39,7 @@ footer-links:
 disqus: FUlyankin
 
 # Comments
-comments: true
+# comments: true
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
