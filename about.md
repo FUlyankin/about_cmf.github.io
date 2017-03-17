@@ -4,12 +4,8 @@
 # permalink: /about/
 # ---
 
-# Some information about you!
-
-# ### More Information
-
-# A place to include any other types of information that you'd like to include about yourself.
+Филипп. Дата шруншер из Москвы.
 
 # ### Contact me
 
-# [email@domain.com](mailto:email@domain.com)
+# Мой профиль [вконтакте](https://vk.com/ppilif), мой профиль на [facebook](https://www.facebook.com/filipp.ulyankin). Моя почта fildonul@gmail.com. Мой ник в телеграмм @Ppilif. 
