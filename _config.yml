@@ -3,16 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-# name: Filipp
+name: Filipp blog
 
 # Short bio or description (displayed in the header)
 # description: Web Developer from Somewhere
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://cs628718.vk.me/v628718483/3eba3/wxF120Q1RA4.jpg
+avatar: https://avatars0.githubusercontent.com/u/11602065?v=3&u=6872d4552b764555449ae9bd463b290a0f80ba46&s=400
 
-# Comments
-comments: true
 
 #
 # Flags below are optional
@@ -21,6 +19,7 @@ comments: true
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
+  vk: ppilif
   email: filfonul@gmail.com
   facebook: filipp.ulyankin
   flickr:
@@ -37,7 +36,10 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: FUlyankin
+
+# Comments
+comments: true
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
