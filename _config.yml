@@ -2,6 +2,10 @@
 # This file contains configuration flags to customize your site
 #
 
+# My own theme for site
+theme: Slate
+
+
 # Name of your site (displayed in the header)
 name: Filipp blog
 
