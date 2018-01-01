@@ -1,4 +1,0 @@
-type: CNAME
-host: www.about_cmf.com
-answer: fulyankin.github.io
-TTL: 300
