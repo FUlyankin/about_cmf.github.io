@@ -1,4 +1,4 @@
-title: Long Haul
+title: Записки одного дата шрушера
 description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
 url: http://brianmaierjr.github.com/long-haul
@@ -16,8 +16,7 @@ navigation:
    url: /index.html
  - title: About
    url: /about
- - title: Contact
-   url: /contact
+
 
 social:
    github: brianmaierjr
