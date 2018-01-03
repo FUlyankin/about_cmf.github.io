@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Визуализируем лайки
 ---
 
 
 <center>
-<img src="../images/cover.png">
+<img src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/cover.png">
 </center>
 
 
@@ -33,11 +32,11 @@ title: Визуализируем лайки
 
 Для начала посмотрим на то как часто люди что-то постят на стенку.
 
-<img align="center" src="../images/2. loises_and_graph/reit_post.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_post.png" height="500">
 
 Также имеет смысл посмотреть как часто люди заливают фотки.
 
-<img align="center" src="../images/2. loises_and_graph/reit_photo.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_photo.png" height="500">
 
 Немного неправильно было называть это рейтингом фоток. Рейтинг фоток у нас будет впереди. Главный вывод, который мы должны сделать из этих визуализаций состоит в том, что бывают очень жесткие выбросы. Многие, например, хайпожор Dr. Beerman запостили за последние два года более ста фоток.
 
@@ -60,11 +59,11 @@ title: Визуализируем лайки
 
 Матрица лайкопостов получается разряженой. Повсюду сплошные нули. Лайк — это редкое событие.
 
-<img align="center" src="../images/2. loises_and_graph/matrix.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/matrix.png" height="500">
 
 Можно построить аналогичную матрицу для более маленького чилса людей. Например, для рандомно отобранной двадцатки.
 
-<img align="center" src="../images/2. loises_and_graph/20_matrix.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/20_matrix.png" height="500">
 
 Матрица всё ещё разряжена. Такие же матрицы можно строить для конкретных людей, но это развлечение остаётся для тех, кто собирается вникать в код. Мы же займёмся визуализацией топов.
 
@@ -75,18 +74,18 @@ title: Визуализируем лайки
 
 Первое же, что приходит в голову поанализировать - это самолайки. Построим их рейтинг. Самолайкпосты особого смысла смотреть нет. Если у человека был один пост и он его случайно самолайкнул, он вырвется в топ.
 
-<img align="center" src="../images/2. loises_and_graph/samolike.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/samolike.png" height="500">
 
 
 ## 4. Популярный или просто хайпожор?
 
 Итак, выше мы решили, что будем смотреть на лайки и лайкопосты. Посмотрим кто получил наибольшее число лайков в абсолютном выражении.
 
-<img align="center" src="../images/2. loises_and_graph/all_top_likes.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/all_top_likes.png" height="500">
 
 Когда я впервые увидел этот график (для тех, кто не в курсе, Ульянкин Филипп, это я), я представил себя на церемонии вроде оскара, но только с золотыми лайками. Однако следующая картинка быстро сбила с меня спесь.
 
-<img align="center" src="../images/2. loises_and_graph/all_top_likeposts.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/all_top_likeposts.png" height="500">
 
 Логично, что если человек вошёл в топ по лайкам, но не смог войти в топ по лайк-постам, он берёт за счёт числа. Он хайпожор. Обратно, если человек вошэт в топ по лайк-постам, но не вошёл в топ по лайкам, скорее всего, он запостил несколько аватарок, которые собрали много лайков и ... всё.
 
@@ -100,7 +99,7 @@ $$ A = \frac{1}{2} \cdot (\text{лайкпосты} + \text{лайки}), $$
 
 то в конечном счёте всё это будет выглядеть как-то так:
 
-<img align="center" src="../images/2. loises_and_graph/fmera1.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/fmera1.png" height="400">
 
 Прямыми на картинке обозначены кривые безразличия. По оси $x$ расположены лайки, по оси $y$ лайкпосты.
 
@@ -108,7 +107,7 @@ $$ A = \frac{1}{2} \cdot (\text{лайкпосты} + \text{лайки}), $$
 
 Исправить это можно несколькими разными путями, например, брать минимум из двух метрик. Как будут в этом случае выглядеть кривые безразличия, вы легко можете угадать сами...
 
-<img align="center" src="../images/2. loises_and_graph/fmera15.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/fmera15.png" height="400">
 
 Однако это также не самый хороший вариант. Два человека с одинаковыми лайками, но разными лайкпостами оказываются эквивалентными. Кривые безразличия хорошо бы сделать выпуклыми.  Именно это позволяет сделать штука, которая носит гордое имя **F-мера** и задаётся следующим образом:
 
@@ -116,7 +115,7 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Линии уровня, которые соотвествуют f-мере, будут выпуклыми.
 
-<img align="center" src="../images/2. loises_and_graph/fmera2.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/fmera2.png" height="400">
 
 Обратите внимание, что хайпожоры будут находиться в правом нижнем углу, а люди с малым количеством постов в левом верхнем. Оба угла находятся на низких кривых безразличия.
 
@@ -126,24 +125,24 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Окей, пришло время построить топ. Зафиксируем $\beta$ на уровне $0.5$, то есть отдадим предпочтение лайкпостам.
 
-<img align="center" src="../images/2. loises_and_graph/f_mera_top.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/f_mera_top.png" height="400">
 
 Я не буду реализовывать f-меру в визуализации. Если есть желание побаловаться с ней, открывайте код.
 
 На этой прекрасной ноте я оставлю тут вот эту картинку и отошлю вас к [4 серии 15 сезона южного парка.](http://online-south-park.ru/season-15/40-15-sezon-4-seriya-irp.html) Картика взята с 8 минуты.
 
-<img align="center" src="../images/2. loises_and_graph/Randi_marsh.jpg" height="300">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/Randi_marsh.jpg" height="300">
 
 
 ## 5. Самые крутые фотки
 
 Просто приведу тут три картинки. Напомню, что $\beta = 0.5$. Большая важность уделяется лайкпостам.
 
-<img align="center" src="../images/2. loises_and_graph/photo_top_likes.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/photo_top_likes.png" height="500">
 
-<img align="center" src="../images/2. loises_and_graph/photo_top_likepost.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/photo_top_likepost.png" height="500">
 
-<img align="center" src="../images/2. loises_and_graph/photo_top_f.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/photo_top_f.png" height="500">
 
 
 
@@ -151,7 +150,7 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Бывают люди, которые ставят очень много лайков всем подряд. Попробуем выцепить самого активного лайкателя. Для этого просуммируем все значения в матрице по столбцам.
 
-<img align="center" src="../images/2. loises_and_graph/fastest_liker.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/fastest_liker.png" height="500">
 
 Чем больше лайков ставит человек, тем менее ценен его лайк. Если пост человека заставляет поставить на него лайк человека, который лайкает очень редко, наверное, это действительно годный пост. Руководствуясь этим, давайте попробуем найти человека с самым годным контентом, и продисконтируем все лайки.
 
@@ -160,16 +159,16 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Получим по новым, дисконтированным метрикам, новый интересный результат.
 
-<img align="center" src="../images/2. loises_and_graph/top_likes_disc.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/top_likes_disc.png" height="500">
 
-<img align="center" src="../images/2. loises_and_graph/top_likepost_discount.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/top_likepost_discount.png" height="500">
 
 
 ## 8. Кого лайкает конкретный человек
 
 Можно пойти дальше и посмотреть кого лайкаю конкретные люди. Например, Игорь Якубовский больше всего за последние два года лайкал Dr Beerman...
 
-<img align="center" src="../images/2. loises_and_graph/igor_loises.png" height="500">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/igor_loises.png" height="500">
 
 
 Стоит сказать, что взаимностью это не закончилось. Dr Beerman за последние два года больше всего лайкал ... Dr Beerman. Часто симпатия бывает невзаимной... Кого и насколько часто лайкают другие люди, можно посмотреть на небольшой интерактивной диаграмке, которую я написал в R в [пакете rshiny.]( https://www.rstudio.com/) Ссылку на неё ищите в материалах в самом конце.
@@ -178,7 +177,7 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Для каждого человека можно составить топ лайков. Интересно было бы узнать кто чаще всего попадает в чужих топах на первое место. Будем составлять топ именно по лайкам. Прошу любить и жаловать, перед вами рейтинг таких людей.
 
-<img align="center" src="../images/2. loises_and_graph/most_freq.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/most_freq.png" height="400">
 
 Делать визуализацию для того, чтобы каждый мог посмотреть у кого он в топе, мне лень. Для этого вам придётся открыть питоновский код и немного в него вникнуть.
 
@@ -187,9 +186,9 @@ $$ F = (1 + \beta^2) \cdot \frac{\text{лайки} + \text{лайкпосты}}{
 
 Поиск мэтчингов — последнее, что мы сделаем в этой части рисёрча. Круто было бы понять кто у друг-друга находится в топе взаимно. Прошу любить и жаловать (да, да, именно такую визуализацию с сердечком, код рисует в питоне).
 
-<img align="center" src="../images/2. loises_and_graph/match_1.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/match_1.png" height="400">
 
-<img align="center" src="../images/2. loises_and_graph/match_2.png" height="400">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/match_2.png" height="400">
 
 
 ## 11. Мэтчинги топ-2
