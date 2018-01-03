@@ -37,7 +37,7 @@ title:
 
 Также имеет смысл посмотреть как часто люди заливают фотки.
 
-<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_photo.png" widt="300">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_photo.png" width="300">
 
 Немного неправильно было называть это рейтингом фоток. Рейтинг фоток у нас будет впереди. Главный вывод, который мы должны сделать из этих визуализаций состоит в том, что бывают очень жесткие выбросы. Многие, например, хайпожор Dr. Beerman запостили за последние два года более ста фоток.
 
