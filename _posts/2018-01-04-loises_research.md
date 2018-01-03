@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  \&#8291        
+title:  2.1 Исследование лайков     
 ---
 
 
@@ -33,11 +33,11 @@ title:  \&#8291
 
 Для начала посмотрим на то как часто люди что-то постят на стенку.
 
-<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_post.png" width="800">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_post.png" width="1000">
 
 Также имеет смысл посмотреть как часто люди заливают фотки.
 
-<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_photo.png" width="700">
+<img align="center" src="https://raw.githubusercontent.com/FUlyankin/ekenam_grand_research/master/images/2.%20loises_and_graph/reit_photo.png" width="900">
 
 Немного неправильно было называть это рейтингом фоток. Рейтинг фоток у нас будет впереди. Главный вывод, который мы должны сделать из этих визуализаций состоит в том, что бывают очень жесткие выбросы. Многие, например, хайпожор Dr. Beerman запостили за последние два года более ста фоток.
 
